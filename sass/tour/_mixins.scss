@@ -1,0 +1,66 @@
+/**
+*  Mixins for width and float position 
+*   $width : for the width
+*   $float : for the float postion
+**/
+@mixin width-float($width,$float){
+    width: $width;
+    float: $float;
+}
+/**
+*  Font size and Font weight;
+*   $f-size : for font-size;
+*   $f-weight : for font-weight;
+**/
+@mixin font-common($f-size,$f-weight){
+    font-size: $f-size;
+    font-weight: $f-weight;
+}
+
+/**
+*  Placeholder color for all browsers
+*   accepts the $color variable
+**/
+@mixin placeholder($color, $weight : inherit){
+    &::-webkit-input-placeholder { color: $color; font-weight: $weight; }  /* WebKit, Blink, Edge */
+    &:-moz-placeholder { color: $color; font-weight: $weight; }  /* Mozilla Firefox 4 to 18 */
+    &::-moz-placeholder { color: $color; font-weight: $weight; }  /* Mozilla Firefox 19+ */
+    &:-ms-input-placeholder { color: $color; font-weight: $weight; }  /* Internet Explorer 10-11 */
+    &::-ms-input-placeholder { color: $color; font-weight: $weight; }  /* Microsoft Edge */
+}
+
+/**
+*  Ellipsis Mixin
+*
+**/
+@mixin ellipsis ($max-height, $lines: 2) {
+    // Fallback for non-webkit browsers.
+    // Fallback does not render ellipsis.
+    overflow: hidden;
+    max-height: $max-height;
+      
+    // Webkit solution for multiline ellipsis
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;  
+    
+    // Solution for Opera
+    text-overflow: -o-ellipsis-lastline;
+  }
+  
+/**
+*  Font awesome font styling
+*  $f-code for the unicode value
+*  $color for the color value
+*
+**/
+@mixin fontawesome($f-code,$color){
+    font-family: fontawesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &::before{
+        content: $f-code;
+        color: $color;
+    }
+}

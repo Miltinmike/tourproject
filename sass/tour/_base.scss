@@ -1,0 +1,163 @@
+html,body{
+    background: $white;
+    height: 100%;
+}
+a,select,button,input:focus{
+    outline: none;
+}
+header,main,footer{
+    @include width-float(100%,left);
+}
+a{
+    color: $purple;
+    text-decoration: none !important;
+    &:hover,
+    &.active{
+        @include transition(.3s);
+        color: $dark-gray;
+    }
+}
+hr{
+    border-top: 3px solid $purple;
+    &.gray{
+        border-top: 3px solid $dark-gray;
+    }
+}
+
+/**
+*   Utility Class
+*
+**/
+.m-t-0{
+    margin-top: 0px !important;
+}
+.m-t-b-10{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+.m-t-b-30{
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+.m-t-b-0{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.m-t-b-5{
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+.m-b-10{
+    margin-bottom: 10px !important;
+}
+.p-l-r-0{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.p-0{
+    padding: 0 !important;
+}
+.p-l-0{
+    padding-left: 0 !important;
+}
+.p-r-0{
+    padding-right: 0 !important;
+}
+.p-rel{
+    position: relative;
+}
+.bold{
+    font-weight: bold;
+    span{
+        margin: 0 10px;
+    }
+}
+.w-100{
+    width: 100% !important;
+}
+.w-50{
+    width: 50% !important;
+}
+.divider{
+    &::before{
+        content: "";
+        margin: 0 10px;
+        border: 2px solid $purple;
+    }
+}
+.form-title {
+    padding: 10px;
+    text-align: center;
+    color: $white;
+    font-size: 20px;
+    span{
+        margin: 0 10px;
+    }
+}
+.padded-5{
+    padding: 0 5%;
+}
+.label-heading {
+    padding: 0 6% 1em;
+}
+.bb{
+    border-bottom: 3px solid $dark-gray;
+}
+.bd-purple{
+    border: 3px solid $purple;
+    color: $purple;
+}
+.bg-purple{
+    background: $purple;
+    color: $white;
+}
+.tag-purple {
+    padding: 5px 10px;
+    font-size: 1.5em;
+    margin: 5px 0;
+    @include border-radius(5px);
+}
+.tag-label{
+    color: $purple;
+    &.bb{
+        border-bottom: 3px solid $purple;
+        float: left;
+        padding-bottom: 5px;    
+    }
+}
+.pad-button{
+    position: relative;
+    @include width-float(100%,left);
+}
+.star{
+    font-size: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    @include fontawesome( "\f006",$purple);
+    &:active{
+        @include transform( scale(1.1));
+    }
+
+    &.active{
+       &::before{
+            content: "\f005";
+       }
+    }
+}
+.filter-btns{
+    .tour-btn{
+        &.active{
+            background: $purple !important;
+        }
+    }
+}
+.price-tag {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+.price{
+    @include fontawesome("\f155",inherit);
+    font-size: 100%;
+    margin: 0 1px;
+}

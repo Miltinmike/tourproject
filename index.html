@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tourproject</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+            <ul class="header-links">
+                <li><a href="about.html" >About</a></li>
+                <li><a href="beahost.html">be a host</a></li>
+                <li><a href="">stories</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Main Content -->
+    <main>
+        <!-- Banner logo caption -->
+        <section class="banner-logo clearfix">
+            <img src="images/logo.png" alt="">
+            <h3>Take a Tour</h3>
+            <span>travel differently</span>
+        </section>
+        <!-- End Banner logo Caption -->
+
+        <!-- Search Section -->
+        <section class="search-panel">
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="fa fa-map-marker"></span>
+                        <input type="search" class="form-control" id="searchTour" placeholder="What is your destination">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <ul class="filter-btns clearfix m-0">
+                        <li><button class="btn btn-default tour-btn">music</button></li>
+                        <li><button class="btn btn-default tour-btn">food</button></li>
+                        <li><button class="btn btn-default tour-btn">sport</button></li>
+                        <li><button class="btn btn-default tour-btn">art</button></li>
+                        <li><button class="btn btn-default tour-btn">country</button></li>
+                        <li><button class="btn btn-default tour-btn">social</button></li>
+                    </ul>
+                    <ul class="advance-filter clearfix m-t-b-5">
+                        <li>
+                            <div class="form-group">
+                                <input type="search" class="form-control" id="" placeholder="#Keywords Search">
+                            </div>
+                        </li>
+                        <li>
+                            <span class="fa fa-calendar"></span>
+                            <a href="" class="date-select">from - until</a>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="fa fa-user"></span>
+                                1 participant
+                            </p>
+                            <button class="btn btn-default tour-btn-bd">Search</button>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </form>
+        </section>        
+        <!-- Filtered Result -->
+        <section class="container filter-result">
+            <div class="col-md-12 m-t-b-30">
+                <hr class="gray" />
+                <div class="col-md-12 text-right">
+                    <div class="dropdown pull-right">
+                        <button id="toursort" class="btn btn-default tour-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">sort by</button>
+                        <ul class="dropdown-menu tour-dropdown" aria-labelledby="toursort">
+                            <li><a href=""> price-high to low</a></li> 
+                            <li><a href="">price- low to high</a></li>
+                            <li><a href=""> rating</a></li>
+                            <li><a href=""> time of day</a></li>
+                            <li><a href=""> activity duration</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+               <section class="col-md-12 item-card">
+                   <!-- Card Slider -->
+                    <div class="col-md-4 images-slider">
+                        <div class="owl-carousel owl-theme gallery-slider">
+                            <div> <a href=""><img src="images/gallery/1.jpg" alt=""></a></div>
+                            <div><a href=""><img src="images/gallery/2.jpg" alt=""></a></div>
+                            <div><a href=""><img src="images/gallery/3.jpg" alt=""></a></div>
+                            <div><a href=""><img src="images/gallery/4.jpg" alt=""></a></div>
+                            <div><a href=""><img src="images/gallery/5.jpg" alt=""></a></div>
+                            <div><a href=""><img src="images/gallery/6.jpg" alt=""></a></div>
+                            <div><a href=""><img src="images/gallery/7.jpg" alt=""></a></div>
+                        </div>
+                        <section class="item-caption">
+                            <img src="images/users/avatar-3.jpg" alt="">
+                            <p>
+                                Yael Chohen
+                                <span>2.5 H</span>
+                            </p>
+                        </section>
+                    </div>
+                    <!-- End Card Slider -->
+                    <!-- Card Details  -->
+                    <article class="col-md-8">
+                        <div class="bg-purple tag-purple w-50 m-t-0">Patreichia Jeohany</div>
+                        <div class="bd-purple-article details">
+                            <section>
+                                <h4> <span>12/4/18</span><i class="divider"></i><span>18:00 - 20:30</span></h4>
+                                <p>
+                                    Learning to work with wood like it has been done for the last 50 year work with wood like it has been done for the 
+                                    work with wood like it has been done for the Learning to work with wood like it has been done for the last 50 year.
+                                </p>
+                                <span>
+                                    <strong>Match:</strong> #food #past #family
+                                </span>
+                            </section>
+                            <section>
+                                <span class="star"></span>
+                                <p>
+                                    Public Event <sup>?</sup>
+                                </p>
+                                <p class="price-tag">
+                                    <span class="price"></span>20
+                                </p>
+                                <span>per person</span>
+                            </section>
+                        </div>
+                    </article>
+                    <!-- End Card Details  -->
+               </section>
+                <section class="col-md-12 item-card">
+                    <!-- Card Slider -->
+                     <div class="col-md-4 images-slider">
+                         <div class="owl-carousel owl-theme gallery-slider">
+                            <div><a href=""><img src="images/gallery/6.jpg" alt=""></a></div>
+                            <div><a href=""><img src="images/gallery/7.jpg" alt=""></a></div>
+                             <div> <a href=""><img src="images/gallery/1.jpg" alt=""></a></div>
+                             <div><a href=""><img src="images/gallery/2.jpg" alt=""></a></div>
+                             <div><a href=""><img src="images/gallery/3.jpg" alt=""></a></div>
+                             <div><a href=""><img src="images/gallery/4.jpg" alt=""></a></div>
+                             <div><a href=""><img src="images/gallery/5.jpg" alt=""></a></div>
+                         </div>
+                         <section class="item-caption">
+                             <img src="images/users/avatar-1.jpg" alt="">
+                             <p>
+                                Christian Lerono
+                                 <span>2.5 H</span>
+                             </p>
+                         </section>
+                     </div>
+                     <!-- End Card Slider -->
+                     <!-- Card Details  -->
+                     <article class="col-md-8">
+                         <div class="bg-purple tag-purple w-50 m-t-0">Fishing for 30 years</div>
+                         <div class="bd-purple-article details">
+                             <section>
+                                 <h4> <span>12/4/18</span><i class="divider"></i><span>18:00 - 20:30</span></h4>
+                                 <p>
+                                     Learning to work with wood like it has been done for the last 50 year work with wood like it has been done for the 
+                                     work with wood like it has been done for the Learning to work with wood like it has been done for the last 50 year.
+                                 </p>
+                                 <span>
+                                     <strong>Match:</strong> #food #past #family
+                                 </span>
+                             </section>
+                             <section>
+                                 <span class="star"></span>
+                                 <p>
+                                     Public Event <sup>?</sup>
+                                 </p>
+                                 <p class="price-tag">
+                                     <span class="price"></span>20
+                                 </p>
+                                 <span>per person</span>
+                             </section>
+                         </div>
+                     </article>
+                     <!-- End Card Details  -->
+                </section>
+                <section class="col-md-12 item-card">
+                    <!-- Card Slider -->
+                    <div class="col-md-4 images-slider">
+                        <div class="owl-carousel owl-theme gallery-slider">
+                        <div><a href=""><img src="images/gallery/3.jpg" alt=""></a></div>
+                        <div><a href=""><img src="images/gallery/4.jpg" alt=""></a></div>
+                        <div><a href=""><img src="images/gallery/6.jpg" alt=""></a></div>
+                        <div><a href=""><img src="images/gallery/7.jpg" alt=""></a></div>
+                        <div> <a href=""><img src="images/gallery/1.jpg" alt=""></a></div>
+                        <div><a href=""><img src="images/gallery/2.jpg" alt=""></a></div>
+                        <div><a href=""><img src="images/gallery/5.jpg" alt=""></a></div>
+                        </div>
+                        <section class="item-caption">
+                            <img src="images/users/avatar-4.jpg" alt="">
+                            <p>
+                            Rony Chohenivoch
+                                <span>2.5 H</span>
+                            </p>
+                        </section>
+                    </div>
+                    <!-- End Card Slider -->
+                    <!-- Card Details  -->
+                    <article class="col-md-8">
+                        <div class="bg-purple tag-purple w-50 m-t-0">Jewish wood work lesson</div>
+                        <div class="bd-purple-article details">
+                            <section>
+                                <h4> <span>12/4/18</span><i class="divider"></i><span>18:00 - 20:30</span></h4>
+                                <p>
+                                    Learning to work with wood like it has been done for the last 50 year work with wood like it has been done for the 
+                                    work with wood like it has been done for the Learning to work with wood like it has been done for the last 50 year.
+                                </p>
+                                <span>
+                                    <strong>Match:</strong> #food #past #family
+                                </span>
+                            </section>
+                            <section>
+                                <span class="star"></span>
+                                <p>
+                                    Public Event <sup>?</sup>
+                                </p>
+                                <p class="price-tag">
+                                    <span class="price"></span>20
+                                </p>
+                                <span>per person</span>
+                            </section>
+                        </div>
+                    </article>
+                    <!-- End Card Details  -->
+                </section>
+                <section class="col-md-12 item-card">
+                        <!-- Card Slider -->
+                        <div class="col-md-4 images-slider">
+                            <div class="owl-carousel owl-theme gallery-slider">
+                                <div><a href=""><img src="images/gallery/5.jpg" alt=""></a></div>
+                                <div><a href=""><img src="images/gallery/3.jpg" alt=""></a></div>
+                                <div><a href=""><img src="images/gallery/7.jpg" alt=""></a></div>
+                                <div><a href=""><img src="images/gallery/4.jpg" alt=""></a></div>
+                                <div><a href=""><img src="images/gallery/6.jpg" alt=""></a></div>
+                                <div> <a href=""><img src="images/gallery/1.jpg" alt=""></a></div>
+                                <div><a href=""><img src="images/gallery/2.jpg" alt=""></a></div>
+                            </div>
+                            <section class="item-caption">
+                                <img src="images/users/avatar-6.jpg" alt="">
+                                <p>
+                                    Patreichia Jeohany
+                                    <span>2.5 H</span>
+                                </p>
+                            </section>
+                        </div>
+                        <!-- End Card Slider -->
+                        <!-- Card Details  -->
+                        <article class="col-md-8">
+                            <div class="bg-purple tag-purple w-50 m-t-0">Metal jewelry in the desert</div>
+                            <div class="bd-purple-article details">
+                                <section>
+                                    <h4> <span>12/4/18</span><i class="divider"></i><span>18:00 - 20:30</span></h4>
+                                    <p>
+                                        Learning to work with wood like it has been done for the last 50 year work with wood like it has been done for the 
+                                        work with wood like it has been done for the Learning to work with wood like it has been done for the last 50 year.
+                                    </p>
+                                    <span>
+                                        <strong>Match:</strong> #food #past #family
+                                    </span>
+                                </section>
+                                <section>
+                                    <span class="star"></span>
+                                    <p>
+                                        Public Event <sup>?</sup>
+                                    </p>
+                                    <p class="price-tag">
+                                        <span class="price"></span>20
+                                    </p>
+                                    <span>per person</span>
+                                </section>
+                            </div>
+                        </article>
+                        <!-- End Card Details  -->
+                    </section>
+            </div>
+            <!-- Pagination -->
+            <div class="w-100 text-center">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li>
+                        <a href="#" aria-label="Previous"><span aria-hidden="true" class="fa fa-angle-left"></span> </a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#" aria-label="Next"><span aria-hidden="true" class="fa fa-angle-right"></span></a></li>
+                    </ul>
+                </nav>
+                <hr class="gray" />
+            </div>
+            <!-- End Pagination -->
+        </section>
+        <!-- End Filtered Result -->
+
+
+
+        <!-- Card list Section -->
+        <section class="card-listing col-md-12">
+            <div class="col-md-12">
+                <section class="col-md-4">
+                   <a href="">
+                        <div class="card-it">
+                            <img src="images/gallery/1.jpg" alt="">
+                            <div class="card-caption"><span> Wedding in Ethiopia</span></div>
+                        </div>
+                   </a>
+                </section>
+                <section class="col-md-4">
+                    <a href="">
+                        <div class="card-it">
+                            <img src="images/gallery/2.jpg" alt="">
+                            <div class="card-caption"><span>Bake in Israel</span></div>
+                        </div>
+                    </a>
+                </section>
+                <section class="col-md-4">
+                   <a href="">
+                        <div class="card-it">
+                            <img src="images/gallery/3.jpg" alt="">
+                            <div class="card-caption"><span>Jewelry in Russia</span></div>
+                        </div>
+                   </a>
+                </section>
+                <section class="col-md-4">
+                    <a href="">
+                        <div class="card-it">
+                            <img src="images/gallery/4.jpg" alt="">
+                            <div class="card-caption"><span>Farm work in England</span></div>
+                        </div>
+                    </a>
+                </section>
+                <section class="col-md-4">
+                   <a href="">
+                        <div class="card-it">
+                            <img src="images/gallery/5.jpg" alt="">
+                            <div class="card-caption"><span>Caligraphy in Japan</span> </div>
+                        </div>
+                   </a>
+                </section>
+                <section class="col-md-4">
+                    <a href="">
+                        <div class="card-it">
+                            <img src="images/gallery/6.jpg" alt="">
+                            <div class="card-caption"><span>Fishing in Greece</span></div>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </section>
+        <!-- End Card list Section -->
+        <section class="search-conten">
+
+        </section>
+    </main>
+    <!-- End Main Content -->
+    <!-- Footer Section -->
+    <footer>
+            <!-- Card list Section -->
+            <section class="container">
+                <div class="clearfix bb"></div>
+                   <div class="col-md-12">
+                       <section class="col-md-3 pull-right">
+                           <ul class="social-list">
+                               <li><a href="">#takeTour</a></li>
+                               <li><a href=""><span class="fa fa-instagram"></span></a></li>
+                               <li><a href=""><span class="fa fa-envelope-o"></span></a></li>
+                               <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                           </ul>
+                       </section>
+                   </div>
+               </section>
+               <!-- End Card list Section -->
+       </footer>
+       <!-- End Footer Section -->
+
+     <!-- Script Section  -->
+     <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+     <script type="text/javascript" src="assets/js/script.js"></script>
+     <!-- End Script Section -->
+
+    </body>
+</html>

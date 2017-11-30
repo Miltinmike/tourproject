@@ -1,0 +1,121 @@
+.images-slider{
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    @include border-radius(10px);
+    .gallery-slider{
+        img{
+            height: 220px;
+            width: 100%;
+        }
+    }
+    .owl-nav {
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        margin: 0;
+        .owl-next,
+        .owl-prev{
+            position: absolute;
+            span{
+                font-size: 35px;
+                padding: 0 10px;
+                color: $white;
+            }
+        }
+        .owl-next{
+            right: 0;
+        }
+    }
+}
+.item-card{
+    margin: 10px 0;
+}
+.item-caption{
+    position: absolute;
+    top: 77%;
+    z-index: 1;
+    width: 100%;
+    background: $dark-gray;
+    height: 50px;
+    @include border-bottom-radius(10px);
+    img{
+        width: 65px;
+        height: 70px;
+        position: relative;
+        z-index: 1;
+        top: -20px;
+        @include border-bottom-left-radius(10px);
+    }
+    p{
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        padding: 3% 23%;
+        height: 100%;
+        font-size: 20px;
+        color: $white;
+        > span{
+            position: absolute;
+            right: 0;
+            padding: 5px 15px;
+            top: 0;
+            background: $purple;
+            height: 100%;
+            line-height: 2;
+            @include border-bottom-right-radius(10px);
+        }
+        
+    }
+}
+.details {
+    h4{
+        margin-top: 0;
+    }
+    > section{
+        &:first-child {
+            width: 80%;
+            float: left;
+            p{
+                @include ellipsis(3em,2);
+            }
+        }
+        &:last-child {
+            text-align: center;
+            float: right;
+            padding: 0;
+            font-size: 90%;
+            width: 20%;
+            >span{
+                &:last-child{
+                    font-size: 12px;
+                    @include opacity(.5);
+                }
+            }
+        }
+    }
+}
+.dropdown-menu.tour-dropdown {
+    padding: 5px;
+    > li {
+        > a {
+            padding: 10px;
+            font-weight: 500;
+            line-height: 1.42857143;
+            font-size: 15px;
+            color: #99005d;
+        }
+    }
+}
+.pagination{
+    > li{
+        a,span{
+            border: none !important;
+            line-height: 1;
+            color: $purple;
+            font-size: 20px;
+            background: transparent !important;
+        }
+    }
+}
